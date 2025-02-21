@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #63835A;
+    --secondary-color: #2C3E50;
+    --text-light: #ECF0F1;
+    --hover-color: #A5C882;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(99, 131, 90, 0.9);
+    padding: 1rem 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-logo {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: var(--hover-color);
+}
+
+/* Hero Section */
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to right, #2C3E50, #63835A);
+    color: white;
+    flex-direction: column;
+}
+
+.img-foto img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img-foto p {
+    max-width: 600px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-content h3 {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
